@@ -1,0 +1,36 @@
+version: '3.5'
+
+networks:
+  localdev:
+    name: localdev
+    
+services:
+  main-api:
+    build: Test/
+    restart: always
+    ports:
+      - "7000:80"
+    depends_on:
+      - db-server
+      - redis
+    networks:
+      - localdev
+        
+  db-server:
+    image: microsoft/mssql-server-linux:2017-latest
+    container_name: localhost
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_TCP_PORT=1433
+    ports:
+      - "1400:1433"
+    networks:
+      - localdev
+  
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - localdev

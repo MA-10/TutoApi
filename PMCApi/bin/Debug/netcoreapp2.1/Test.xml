@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Test</name>
+    </assembly>
+    <members>
+        <member name="T:Test.Controllers.GenericController`1">
+            <response code="200">Operation has succeeded</response>
+            <response code="401">Authorization Failed</response>
+            <response code ="500">Error in Configuration</response>
+            /// <response code="404"> Ammar Not Found</response>
+        </member>
+        <member name="T:Test.Services.IUriService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Test.Services.UriService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Test.Services.UriService.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="baseUri"></param>
+        </member>
+        <member name="M:Test.Services.UriService.GetUri(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Test.Services.UriService.GetAllUri(Test.Requests.Query.PaginationQuery)">
+            <summary>
+            
+            </summary>
+            <param name="pagination"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

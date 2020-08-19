@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Test</name>
+    </assembly>
+    <members>
+        <member name="T:Test.Controllers.CustomersController">
+            <response code="200">Operation has succeeded</response>
+            <response code="401">Authorization Failed</response>
+            <response code ="500">Error in Configuration</response>
+            /// <response code="404"> Ammar Not Found</response>
+        </member>
+        <member name="M:Test.Controllers.CustomersController.Get">
+            <summary>
+            Get All Customers And Their Informations
+            </summary>
+        </member>
+        <member name="M:Test.Controllers.CustomersController.GetCustomerById(System.Int32)">
+            <summary>
+            Get A Customer by Id And His Informations
+            </summary>
+        </member>
+        <member name="M:Test.Controllers.CustomersController.Delete(System.Int32)">
+            <summary>
+            Delete  Custommer 
+            </summary>
+            /// <response code="204">Deleted successfully</response>
+        </member>
+        <member name="M:Test.Controllers.CustomersController.AddCustomer(Test.Requests.CustomerRequest)">
+            <summary>
+            Add a New Custommer 
+            </summary>
+        </member>
+    </members>
+</doc>
